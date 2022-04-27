@@ -10,6 +10,7 @@
     <style>
         #navbar{
             margin-bottom: 100px;
+            color: white;
         }
     </style>
 </head>
@@ -32,7 +33,7 @@
 </html>
 <script>
     document.querySelector("#investors").addEventListener("submit", investorfun);
-    var invarr = JSON.parse(localStorage.getItem("data")||[])
+    var invarr = JSON.parse(localStorage.getItem("data")) || [];
     function investorfun() {
         event.preventDefault();
 
